@@ -40,13 +40,19 @@ body {
     border-radius: 0.5rem;
     width: 50%;
     text-align: center;
+    border: none;
 }
 
-@media (min-width:778px) {
+.boton:hover{
+    cursor: pointer;
+
+}
+
+/* @media (min-width:778px) {
     .boton {
         width: auto;
     }
-}
+} */
 
 .sombra {
     -webkit-box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.54);
@@ -76,9 +82,30 @@ h2,
 h3 {
     text-align: center;
 }
+/* Reglas de titulos */
 
 .titulo span {
     font-size: 2rem;
+}
+
+/* Utilidades */
+
+.w-100 {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .w-100{
+        width: auto;
+    }   
+}
+
+.flex{
+    display: flex;
+}
+
+.alinear-derecha{
+    justify-content: flex-end
 }
 
 .contenedor {
@@ -155,23 +182,23 @@ h3 {
     }
 }
 
-.servicio{
+.servicio {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.servicio h3{
- color: var(--secundario);
- font-weight: normal;
+.servicio h3 {
+    color: var(--secundario);
+    font-weight: normal;
 }
 
-.servicio p{
+.servicio p {
     line-height: 2;
     text-align: center;
 }
 
-.servicio .iconos{
+.servicio .iconos {
     height: 15rem;
     width: 15rem;
     background-color: var(--primario);
@@ -179,4 +206,54 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Estilos seccion Contacto */
+
+.formulario {
+    background-color: var(--gris);
+    width: min(60rem, 100%);
+    /*Utlizar el valor mas pequeño */
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: var(--primario);
+}
+
+.contenedor-campos{
+
+}
+
+.campo{
+margin-bottom: 1rem;
+}
+
+.campo label{
+color: var(--blanco);
+font-weight: bold;
+margin-bottom: 0.5rem;
+display: block;
+}
+
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.boton{
+    width: 100%;
 }
